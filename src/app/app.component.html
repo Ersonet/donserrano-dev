@@ -1,0 +1,40 @@
+<header class="main-header">
+  <h1>DonSerrano Dev</h1>
+  <p>Portafolio funcional en Angular + Express</p>
+</header>
+
+<nav class="main-nav">
+  <button>Usuarios</button>
+  <button>Publicaciones</button>
+  <button>Contacto</button>
+</nav>
+
+<section class="card-section">
+  <h2>Usuarios registrados</h2>
+  <div class="card" *ngFor="let usuario of usuarios">
+    <h3>{{ usuario.nombre }}</h3>
+    <p>Email: {{ usuario.email }}</p>
+  </div>
+</section>
+
+<section class="table-section">
+  <h2>Publicaciones recientes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Autor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pub of publicaciones">
+        <td>{{ pub.titulo }}</td>
+        <td>{{ pub.autor }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer class="main-footer">
+  <p>&copy; 2025 DonSerrano Dev · Proyecto académico</p>
+</footer>
