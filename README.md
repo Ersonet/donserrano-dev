@@ -3,7 +3,7 @@
 Proyecto académico funcional que conecta frontend Angular con backend Express vía HTTP y endpoints RESTful.
 
 ## 🔗 Despliegue
-- Frontend: [Netlify](https://donserranodev.netlify.app)
+- Frontend: [Netlify]([https://donserranodev.netlify.app](https://startling-strudel-f44468.netlify.app/))
 - Backend: [Render](https://openex-backend.onrender.com/api)
 
 ## 🛠️ Tecnologías
