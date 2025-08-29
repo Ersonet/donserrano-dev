@@ -1,20 +1,21 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NgForOf } from "../../node_modules/@angular/common/common_module.d";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  imports: [NgForOf]
-})
-
-@Component({
-  selector: 'app-usuarios',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './usuarios.component.html',
-  styleUrls: ['./usuarios.component.scss']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
+export class AppComponent {
+  usuarios = [
+    { nombre: 'Jefferson', email: 'jefferson@example.com' },
+    { nombre: 'Ana', email: 'ana@example.com' }
+  ];
 
-export class AppComponent {}
+  publicaciones = [
+    { titulo: 'Angular Modular', autor: 'Jefferson' },
+    { titulo: 'Node.js Express', autor: 'Ana' }
+  ];
+}
